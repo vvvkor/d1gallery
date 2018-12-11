@@ -1,0 +1,23 @@
+{
+  "name": "d1gallery",
+  "version": "1.2.0",
+  "description": "Lightweight image gallery",
+  "main": "d1gallery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvvkor/d1gallery"
+  },
+  "keywords": [
+    "image",
+    "gallery",
+    "viewer"
+  ],
+  "author": "Vadim Korolev <vadimkor@yandex.ru> (https://github.com/vvvkor)",
+  "license": "MIT",
+  "dependencies": {
+    "d1css": "^1.2"
+  }
+}
