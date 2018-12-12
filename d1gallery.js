@@ -53,7 +53,7 @@ var main = new(function () {
       //p.style.setProperty('--img', 'url("' + a[i].getAttribute('href') + '")');
       //p.style.backgroundImage = 'url("' + a[i].getAttribute('href') + '")';//preload all
       p.vImg = a[i].getAttribute('href');//preload prev & next
-      p.setAttribute('data-info', (this.opt.num ? (i+1)+'/'+z+' - ' : '') + (a[i].title || ''));
+      p.setAttribute('data-info', (this.opt.num ? (i+1)+'/'+z+(a[i].title ? ' - ' : '') : '') + (a[i].title || ''));
       a[i].href = '#' + p.id;
     }
     d1.ins('a', d1.i('close'), {href: this.opt.hashCancel, className: d1.opt.cClose}, g);
