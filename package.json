@@ -1,6 +1,6 @@
 {
   "name": "d1gallery",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Lightweight image gallery",
   "main": "d1gallery.js",
   "scripts": {

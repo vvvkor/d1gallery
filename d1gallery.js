@@ -1,4 +1,5 @@
-//uses d1
+/*! d1gallery https://github.com/vvvkor/d1gallery */
+/* Lighweight image gallery */
 
 //.gallery a.pic
 (function () {
