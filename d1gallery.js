@@ -2,6 +2,7 @@
 /* Lighweight image gallery */
 
 //.gallery a.pic
+if(typeof module !== "undefined") var d1 = require('d1css');
 (function () {
 var main = new(function () {
 
