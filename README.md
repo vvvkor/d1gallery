@@ -2,7 +2,7 @@
 
 Add-on for [d1](https://github.com/vvvkor/d1).  
 Lighweight image gallery.  
-[Demo & docs](http://vadimkor.ru/projects/d1#gallery)
+[Demo & docs](https://vvvkor.github.io/d1#gallery)
 
 ## Install
 
