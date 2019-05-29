@@ -74,6 +74,8 @@ var main = new(function () {
     }
   }
 
+  d1.plug(this);
+
 })();
 
   if (typeof module !== "undefined") module.exports = main;
