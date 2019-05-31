@@ -8,6 +8,8 @@ var main = new(function () {
 
   "use strict";
 
+  this.name = 'gallery';
+  
   this.opt = {
     hashCancel: '#cancel',
     idPrefix: 'pic',
