@@ -48,7 +48,7 @@ var main = new(function () {
     var g = d1.ins('div', '', {className: d1.opt.cGallery});
     var a = n.querySelectorAll(this.opt.qsLinks);
     var z = a.length;
-    for(var i=0; i<z; i++) {
+    for(var i=0; i<z; i++) if(!a[i].vDone) {
       this.seq++;
       var p = d1.ins('a', '', {
           id: this.opt.idPrefix + this.seq,
@@ -59,6 +59,7 @@ var main = new(function () {
       p.vImg = a[i].getAttribute('href');//preload prev & next
       p.setAttribute('data-info', (this.opt.num ? (i+1)+'/'+z+(a[i].title ? ' - ' : '') : '') + (a[i].title || ''));
       a[i].href = '#' + p.id;
+      a[i].vDone = 1;
     }
     d1.ins('a', d1.i('close'), {href: this.opt.hashCancel, className: d1.opt.cClose}, g);
     d1.b(g, 'a[id]', 'click', d1.gotoPrev);
