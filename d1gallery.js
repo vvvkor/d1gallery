@@ -56,6 +56,7 @@ var main = new(function () {
           }, g);
       //p.style.setProperty('--img', 'url("' + a[i].getAttribute('href') + '")');
       //p.style.backgroundImage = 'url("' + a[i].getAttribute('href') + '")';//preload all
+      p.vLink = a[i].getAttribute('href');//real link
       p.vImg = a[i].getAttribute('href');//preload prev & next
       p.setAttribute('data-info', (this.opt.num ? (i+1)+'/'+z+(a[i].title ? ' - ' : '') : '') + (a[i].title || ''));
       a[i].href = '#' + p.id;
@@ -72,7 +73,8 @@ var main = new(function () {
       if(a && a.hash){
         var k = e.keyCode;
         if (k==37 || k==38) d1.gotoPrev(a);
-        if (k==39 || k==40) location.hash = a.hash;//a.click();
+        else if (k==39 || k==40) location.hash = a.hash;//a.click();
+        else if(k==8 && a.vLink) location.href = a.vLink;
       }
     }
   }
