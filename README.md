@@ -1,5 +1,12 @@
 # d1gallery
 
+**DEPRECATED**
+
+This is no longer maintained.  
+Please consider using [d1-web](https://github.com/vvvkor/d1-web) instead.
+
+---
+
 Add-on for [d1](https://github.com/vvvkor/d1).  
 Lighweight image gallery.  
 [Demo & docs](https://vvvkor.github.io/d1#gallery)
